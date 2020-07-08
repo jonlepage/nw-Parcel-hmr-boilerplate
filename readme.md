@@ -31,7 +31,7 @@ BoilerPlate start fast application with pixijs,react,nwjs
 ## **NPM**
 
 ```javascript
-npm i appname
+npm i nw-parcel-hmr-boilerplate
 ```
 
 ## **CMD**
