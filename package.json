@@ -1,6 +1,6 @@
 {
 	"name": "nw-parcel-hmr-boilerplate",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "BoilerPlate start fast application with pixijs,react,nwjs",
 	"main": "index.js",
 	"scripts": {

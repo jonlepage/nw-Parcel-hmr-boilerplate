@@ -38,11 +38,10 @@ npm i appname
 
 ```bash
 # clone the repo.
-# --depth 1 removes all but one .git commit history (Optional).
-git clone --depth 1 https://github.com/djmisterjon/pixi-nwjs-starter.git
+git clone --depth 1 https://github.com/djmisterjon/nw-parcel-hmr-boilerplate.git
 
 # set change directory to repo
-cd pixi-nwjs-starter
+cd nw-parcel-hmr-boilerplate
 
 # install the dependencies via npm
 npm i
