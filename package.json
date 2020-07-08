@@ -1,7 +1,7 @@
 {
 	"name": "nw-parcel-hmr-boilerplate",
 	"version": "1.0.0",
-	"description": "",
+	"description": "BoilerPlate start fast application with pixijs,react,nwjs",
 	"main": "index.js",
 	"scripts": {
 		"postinstall": "cd ./node_modules/nw  &&  npm install --nwjs_build_type=sdk",
@@ -17,8 +17,19 @@
 		"Parcel",
 		"React",
 		"template",
-		"boilerPlate"
+		"boilerPlate",
+		"HMR",
+		"node-webkit",
+		"nw"
 	],
+	"bugs": {
+		"url": "https://github.com/djmisterjon/nw-Parcel-hmr-boilerplate/issues"
+	},
+	"homepage": "https://github.com/djmisterjon/nw-Parcel-hmr-boilerplate",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/djmisterjon/nw-Parcel-hmr-boilerplate.git"
+	},
 	"author": "Jonathan Lepage",
 	"license": "M.I.T",
 	"dependencies": {

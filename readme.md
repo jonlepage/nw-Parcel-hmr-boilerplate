@@ -1,5 +1,7 @@
 # Nwjs Parcel HMR boilerPlate (StarterKit)
 
+BoilerPlate start fast application with pixijs,react,nwjs
+
 ## Features
 
 - React FrontEnd (Framework HTML)
