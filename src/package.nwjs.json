@@ -1,0 +1,54 @@
+{
+	"main": "http://localhost:1234",
+	"node-remote": "http://localhost:1234",
+	"name": "app name",
+	"description": "NW.js and react from scratch",
+	"version": "0.1.0",
+	"chromium-args": "--enable-webvr --webxr --enable-gamepad-extensions --enable-gamepad-vibration --enable-spell-checking --remote-debugging-port=9222 --load-extension='./plugins/pixi_devtools_0.9.3_0','./plugins/React_Developer_Tools_4.7.0_0','./plugins/spectorjs_0.9.16_0'",
+	"permissions": [
+		"chrome-extension://*",
+		"file:///*",
+		"http://*/*",
+		"https://*/*"
+	],
+	"window": {
+		"frame": true,
+		"toolbar": true,
+		"min_width": 220,
+		"min_height": 65,
+		"as_desktop": true
+	},
+
+	"platformOverrides": {
+		"win": {
+			"window": {
+				"frame": true,
+				"toolbar": true,
+				"min_width": 220,
+				"min_height": 65
+			}
+		},
+		"win32": {
+			"window": {
+				"frame": false,
+				"toolbar": false,
+				"min_width": 220,
+				"min_height": 65
+			}
+		},
+		"win64": {
+			"window": {
+				"frame": false,
+				"toolbar": false,
+				"min_width": 220,
+				"min_height": 65
+			}
+		},
+		"osx": {},
+		"osx32": {},
+		"osx64": {},
+		"linux": {},
+		"linux32": {},
+		"linux64": {}
+	}
+}

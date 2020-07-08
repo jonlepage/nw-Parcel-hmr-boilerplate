@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "es2015",
+    "jsx": "react",
+    "checkJs": true,
+    "lib": ["esnext", "dom"],
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true
+    //permet de redefenir la base url de intelisence et autre plugin
+  },
+  "include": ["src/**/*"]
+}

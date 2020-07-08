@@ -1,0 +1,43 @@
+{
+  // Utilisez IntelliSense pour en savoir plus sur les attributs possibles.
+  // Pointez pour afficher la description des attributs existants.
+  // Pour plus d'informations, visitez : https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+
+  "configurations": [
+    {
+      "name": "AttachNW",
+      "type": "nwjs",
+      "request": "attach",
+      "port": 9222,
+      "reloadAfterAttached": true,
+      "webRoot": "${workspaceFolder}",
+      "skipFiles": [
+        "kocckdcdjkllpdambcbhaoldmdjgiego/vendor/handsontable.full.js",
+        "fmkadmapgofadopljbjfkapdkoienihi/build/injectGlobalHook.js",
+        "injectGlobalHook.js",
+        "${workspaceFolder}/node_modules/**/*.js"
+      ],
+
+      "sourceMaps": true,
+      "sourceMapPathOverrides": {
+        "../*": "${webRoot}/*"
+      },
+      "url": "http://localhost:1234"
+    },
+    {
+      "name": "startNw",
+      "command": "npm run start-nw",
+      "request": "launch",
+      "type": "node-terminal",
+      "trace": false,
+      "autoAttachChildProcesses": false
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Full-Dev",
+      "configurations": ["startNw", "AttachNW"]
+    }
+  ]
+}
