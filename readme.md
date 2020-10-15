@@ -20,10 +20,43 @@ BoilerPlate start fast application with nwjs parcel HMR
 
 <img src="https://images2.imgbox.com/38/5f/NjtVaOBI_o.png" width="120" height="40" />
 
-# DEVELOPPEMENT
+```bash
+# install the dependencies via npm
+# this is required before lunch nwjs app
+npm i
+
+# dev your app with HMR
+npm run start-nw
+
+# Build your final app and distribute
+npm run build-nw
+
+```
+
+# DEVELOPPEMENT doc
 
 - developpement will bundle app in `dist` folder.
 - production will bundle app in `build` folder.
+
+## **Desktop**
+
+### **developpement**
+
+- Start dev servor for desktop (nwjs)
+
+```bash
+npm run start-nw
+```
+
+### **production**
+
+- Build final app for desktop ([x64,x86],Win,Osx,Linux)
+
+```bash
+npm run build-nw
+```
+
+---
 
 ---
 
@@ -43,26 +76,6 @@ npm start
 
 ```bash
 npm run build
-```
-
----
-
-## **Desktop**
-
-### **developpement**
-
-- Start dev servor for desktop (nwjs)
-
-```bash
-npm run start-nw
-```
-
-### **production**
-
-- Build final app for desktop ([x64,x86],Win,Osx,Linux)
-
-```bash
-npm run build-nw
 ```
 
 ---
