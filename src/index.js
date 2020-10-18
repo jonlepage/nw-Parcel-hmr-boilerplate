@@ -8,3 +8,8 @@ if (window.nw) {
 } else {
   document.write("is web versions or somthing wrong");
 }
+
+import React from "react";
+import ReactDom from "react-dom";
+
+ReactDom.render(<div>hellow world</div>, document.getElementById("root"));

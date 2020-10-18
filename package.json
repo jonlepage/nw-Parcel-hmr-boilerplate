@@ -1,47 +1,26 @@
 {
   "name": "nw-parcel-hmr-boilerplate",
-  "version": "1.0.4",
-  "description": "BoilerPlate start fast application with nwjs parcel",
+  "version": "1.0.0",
+  "description": "Issue with nwjs 0.48=>0.49 extention node-remote",
   "main": "index.js",
   "scripts": {
     "postinstall": "cd ./node_modules/nw  &&  npm install --nwjs_build_type=sdk",
-    "start": "parcel src/index.html",
-    "start-nw": "SET NODE_ENV=development & parcel build src/index.html --no-minify  && concurrently --kill-others \"npm start\" \"npm run nw\" ",
-    "build": "parcel build src/index.html --out-dir build/web",
-    "build-nw": "npm run build && nwbuild --platforms win32,win64,linux64,osx64 --buildDir build/ build/web",
+    "start": "parcel src/index.html --no-autoinstall",
+    "start-nw": "npm run copy && concurrently --kill-others  \"npm run nw\" \"npm start\"",
+    "copy": "node tasks/copy.js -nwp plugins -d",
     "nw": "nw dist/ --remote-debugging-port=9222"
   },
-  "staticFiles": {
-    "staticPath": "src/public",
-    "watcherGlob": "**"
-  },
-  "keywords": [
-    "nwJs",
-    "nw.js",
-    "Parcel",
-    "template",
-    "boilerPlate",
-    "HMR",
-    "node-webkit",
-    "nw"
-  ],
-  "bugs": {
-    "url": "https://github.com/djmisterjon/nw-Parcel-hmr-boilerplate/issues"
-  },
-  "homepage": "https://github.com/djmisterjon/nw-Parcel-hmr-boilerplate",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/djmisterjon/nw-Parcel-hmr-boilerplate.git"
-  },
-  "author": "Jonathan Lepage",
   "license": "M.I.T",
-  "dependencies": {},
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
   "devDependencies": {
     "@types/nw.js": "^0.13.10",
-    "nw": "^0.49.0",
+    "nw": "^0.48.0",
     "nw-builder": "^3.5.7",
     "concurrently": "^5.3.0",
     "parcel-bundler": "^1.12.4",
-    "parcel-plugin-static-files-copy": "^2.5.0"
+    "commander": "^6.1.0"
   }
 }
