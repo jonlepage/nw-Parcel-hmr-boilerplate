@@ -1,4 +1,8 @@
+import React from "react";
+import ReactDom from "react-dom";
+import App from "./app";
 import "./index.css";
+
 if (window.nw) {
   console.log("nw", nw);
   console.log("window.process", window.process?.versions?.ares);
@@ -9,7 +13,4 @@ if (window.nw) {
   document.write("is web versions or somthing wrong");
 }
 
-import React from "react";
-import ReactDom from "react-dom";
-
-ReactDom.render(<div>hellow world</div>, document.getElementById("root"));
+ReactDom.render(<App />, document.getElementById("root"));
