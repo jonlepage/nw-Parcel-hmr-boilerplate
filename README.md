@@ -21,24 +21,18 @@ Boilerplate for Desktop App development using Parcel for Hot Module Reloading (H
 
 ## Development
 
-**Desktop App:** Local development
-
-1. `npm run start-nw`
-
-**Web App:** Local development, starts dev server
-
-1. `npm start`
+* **Desktop App:** Local development
+  * `npm run start-nw`
+* **Web App:** Local development, starts dev server
+  * `npm start`
 
 
 ## Build for production
 
-**Desktop App:** Build final app for desktop (x64, x86, Windows, Linux, OSX)
-
-1. `npm run build-nw`
-
-**Web App:** Build final app for browsers
-
-1. `npm run build`
+* **Desktop App:** Build final app for desktop (x64, x86, Windows, Linux, OSX)
+  * `npm run build-nw`
+* **Web App:** Build final app for browsers
+  * `npm run build`
 
 
 * * *
