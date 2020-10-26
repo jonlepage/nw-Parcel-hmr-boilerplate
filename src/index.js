@@ -4,7 +4,7 @@ if (window.nw) {
   // Acces NW.js API via window.nw or global.nw
   console.log('nw', nw);
 
-  // Access Node process through window.process or global.process
+  // Access Node process through window.process, global.process, or nw.process
   console.log('Node version', window.process?.version);
 
   // Require Node moduels via window.require, global.require, or nw.require
