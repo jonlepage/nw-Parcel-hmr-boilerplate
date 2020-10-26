@@ -1,20 +1,15 @@
-# NW.js Parcel HMR boilerPlate (StarterKit)
+# NW.js Parcel HMR Boilerplate
 
-BoilerPlate start fast application with nwjs parcel HMR
+Boilerplate for Desktop App development using Parcel for Hot Module Reloading (HMR).
 
 
 ## Features
 
 * Parcel Bundlers
-* Builds for all majors Browsers (Chrome,Edge,FireFox...)
+* Builds for all majors Browsers (Chrome, Edge, FireFox...)
 * Builds for all majors Desktops achhitectures (x86, x64, Windows, OSX, Linux...)
-* HotReload browser and desktop (NW.js)
-* NodeJS (Native with NW.js)
-
-
-## PREVIEW
-
-<img src="https://images2.imgbox.com/d2/49/9FnrOoYP_o.png" width="200" />
+* Hot reloading of browser and desktop (NW.js)
+* Node.js (Native with NW.js)
 
 
 # Quicks starts
@@ -44,17 +39,17 @@ npm run build-nw
 
 ## **Desktop**
 
-### **developpement**
+### **Development**
 
-- Start dev servor for desktop (nwjs)
+* Start dev server for desktop (NW.js)
 
 ```bash
 npm run start-nw
 ```
 
-### **production**
+### **Production**
 
-- Build final app for desktop ([x64,x86],Win,Osx,Linux)
+* Build final app for desktop (x64, x86, Windows, Linux, OSX)
 
 ```bash
 npm run build-nw
@@ -66,26 +61,27 @@ npm run build-nw
 
 ## **Browser**
 
-### **developpement**
+### **Development**
 
-- Start dev servor for browser dev
+* Start dev servor for browser dev
 
 ```bash
 npm start
 ```
 
-### **production**
+### **Production**
 
-- Build final app for browser
+* Build final app for browser
 
 ```bash
 npm run build
 ```
 
----
+* * *
+
 
 # NOTE
 
-- `src` folder is where code your app.
-- NwJS is install locally in `node_modules`, but your can install globally.
-- `package.json` inside public, is where setup the desktop developpement and build.
+* `src` folder is where you code your app
+* NW.js is installed locally in `node_modules`
+* `package.json` inside public, is where setup the desktop development and build
