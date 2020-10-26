@@ -1,29 +1,31 @@
-# Nwjs Parcel HMR boilerPlate (StarterKit)
+# NW.js Parcel HMR boilerPlate (StarterKit)
 
 BoilerPlate start fast application with nwjs parcel HMR
 
+
 ## Features
 
-- Parcel Bundlers
-- Builds for all majors Browsers (Chrome,Edge,FireFox...)
-- Builds for all majors Desktops achhitectures ([x86,x64],Win,Osx,Linux...)
-- HotReload browser and desktop (nwjs)
-- NodeJS (Native with nwjs)
+* Parcel Bundlers
+* Builds for all majors Browsers (Chrome,Edge,FireFox...)
+* Builds for all majors Desktops achhitectures (x86, x64, Windows, OSX, Linux...)
+* HotReload browser and desktop (NW.js)
+* NodeJS (Native with NW.js)
+
 
 ## PREVIEW
 
-&nbsp;<img src="https://images2.imgbox.com/d2/49/9FnrOoYP_o.png" width="200" />
+<img src="https://images2.imgbox.com/d2/49/9FnrOoYP_o.png" width="200" />
+
 
 # Quicks starts
 
-## **Download || fork || open in Desktop**
 
-<img src="https://images2.imgbox.com/38/5f/NjtVaOBI_o.png" width="120" height="40" />
+## **Download || fork || open in Desktop**
 
 ```bash
 # install the dependencies via npm
 # this is required before lunch nwjs app
-npm i
+npm install
 
 # dev your app with HMR
 npm run start-nw
@@ -33,10 +35,12 @@ npm run build-nw
 
 ```
 
-# DEVELOPPEMENT doc
 
-- developpement will bundle app in `dist` folder.
-- production will bundle app in `build` folder.
+# Development doc
+
+* Development will bundle app in `dist` folder.
+* Production will bundle app in `build` folder.
+
 
 ## **Desktop**
 
