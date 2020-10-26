@@ -1,22 +1,14 @@
 # Nwjs Parcel HMR boilerPlate (StarterKit)
 
-BoilerPlate start fast application with pixijs,react,nwjs
+BoilerPlate start fast application with nwjs parcel HMR
 
 ## Features
 
-- React FrontEnd (Framework HTML)
-- PixiJS BackEnd (Library bridge between WebGL and GPU)
-- Parcel Bundlers (almost no config)
-- RES (react-easy-state) stores (instead of Redux)
-- UI toolkit AntDesign MaterialUI, BluePrintJS (treeShaking)
-- WebXR backend API (browser and nwjs) with fallback polyfill
+- Parcel Bundlers
 - Builds for all majors Browsers (Chrome,Edge,FireFox...)
 - Builds for all majors Desktops achhitectures ([x86,x64],Win,Osx,Linux...)
 - HotReload browser and desktop (nwjs)
 - NodeJS (Native with nwjs)
-- Include Plugins inspector config: PIXIDEVTOOL, REACTDEVTOOL, SPECTORJS
-- PreConfig for Babel, esLint, Less, Prettier
-- PreConfig for VsCode live debbugger (remote,hotreload,nwjs)
 
 ## PREVIEW
 
@@ -28,30 +20,43 @@ BoilerPlate start fast application with pixijs,react,nwjs
 
 <img src="https://images2.imgbox.com/38/5f/NjtVaOBI_o.png" width="120" height="40" />
 
-## **NPM**
-
-```javascript
-npm i nw-parcel-hmr-boilerplate
-```
-
-## **CMD**
-
 ```bash
-# clone the repo.
-git clone --depth 1 https://github.com/djmisterjon/nw-parcel-hmr-boilerplate.git
-
-# set change directory to repo
-cd nw-parcel-hmr-boilerplate
-
 # install the dependencies via npm
+# this is required before lunch nwjs app
 npm i
 
+# dev your app with HMR
+npm run start-nw
+
+# Build your final app and distribute
+npm run build-nw
+
 ```
 
-# DEVELOPPEMENT
+# DEVELOPPEMENT doc
 
 - developpement will bundle app in `dist` folder.
 - production will bundle app in `build` folder.
+
+## **Desktop**
+
+### **developpement**
+
+- Start dev servor for desktop (nwjs)
+
+```bash
+npm run start-nw
+```
+
+### **production**
+
+- Build final app for desktop ([x64,x86],Win,Osx,Linux)
+
+```bash
+npm run build-nw
+```
+
+---
 
 ---
 
@@ -75,32 +80,8 @@ npm run build
 
 ---
 
-## **Desktop**
-
-### **developpement**
-
-- Start dev servor for desktop (nwjs)
-
-```bash
-npm run start-nw
-```
-
-### **production**
-
-- Build final app for desktop ([x64,x86],Win,Osx,Linux)
-
-```bash
-npm run build-nw
-```
-
----
-
 # NOTE
 
 - `src` folder is where code your app.
 - NwJS is install locally in `node_modules`, but your can install globally.
-- `package.nwjs.json` is where setup the desktop developpement and build.
-- `index.less` is parent for import all css.
-- `res` folder is where put images,files....
-- `index.store.jsx` Is the Parent global stores for React.
-- `backend` folder is where pixijs,webxr,... run.
+- `package.json` inside public, is where setup the desktop developpement and build.
